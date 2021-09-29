@@ -1,3 +1,5 @@
+package hu.petrik;
+
 import java.time.LocalDateTime;
 
 public class Bejegyzes {
