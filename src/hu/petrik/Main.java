@@ -5,11 +5,15 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static List<Bejegyzes> bejegyList= new ArrayList<>();
     public static Scanner sc = new Scanner(System.in);
+    public static FileReader fr;
+    public static BufferedReader bf;
+    public static Random rrnd=new Random();
 
 
 
@@ -33,6 +37,7 @@ public class Main {
 
         }
         fileBeolvas("bejegyzesek.txt");
+        like20();
 
     }
     public static void fileBeolvas(String fileNev){
@@ -51,6 +56,12 @@ public class Main {
             System.out.println(ex.getMessage());
         }
 
+    }
+    public static void like20() {
+        int bejegyzesekSzorzata = bejegyList.size() * 20;
+        for (int i = 0; i < bejegyzesekSzorzata; i++) {
+            bejegyList.get(rrnd.nextInt(bejegyList.size())).like();
+        }
     }
 
 }
