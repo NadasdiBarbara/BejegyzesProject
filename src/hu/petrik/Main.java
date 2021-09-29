@@ -43,6 +43,8 @@ public class Main {
         String bjegyMod = sc.nextLine();
         bejegyList.get(1).setTartalom(bjegyMod);
 
+        System.out.println(bejegyList);
+
     }
     public static void fileBeolvas(String fileNev){
         try {
