@@ -39,6 +39,10 @@ public class Main {
         fileBeolvas("bejegyzesek.txt");
         like20();
 
+        System.out.print("Második bejegyzés cseréje:  ");
+        String bjegyMod = sc.nextLine();
+        bejegyList.get(1).setTartalom(bjegyMod);
+
     }
     public static void fileBeolvas(String fileNev){
         try {
