@@ -16,6 +16,19 @@ public class Main {
 	BejegyList.add(b1);
 	BejegyList.add(b2);
 
+        int db;
+        System.out.print("Adjon meg egy számmot: ");
+        db = sc.nextInt();
+
+        for (int i = 0; i < db; i++) {
+            System.out.print("Adja meg a szerzőt: ");
+            String szerzo = sc.next();
+            System.out.print("Adja meg a tartalmát: ");
+            String tartalom = sc.next();
+            BejegyList.add(new Bejegyzes(szerzo, tartalom));
+
+        }
+
 
 
     }
